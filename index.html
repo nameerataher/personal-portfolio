@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Nameera Taher | Personal Portfolio</title>
+		<title>Nameera | Personal Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!-- Hotjar Tracking Code for Site 5073964 (name missing) -->
+		<!-- Hotjar Tracking Code for Site 5073964 -->
 		<script>
 			(function(h,o,t,j,a,r){
 				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -20,18 +20,31 @@
 	</head>
 	<body class="is-preload">
 
+		<!-- Navigation Menu -->
+		<nav class="wrapper style1 align-center" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #e0e0e0;">
+			<div class="inner" style="padding: 1rem 0;">
+				<ul class="actions" style="margin: 0;">
+					<li><a href="#home" class="button">Home</a></li>
+					<li><a href="#projects" class="button">Projects</a></li>
+					<li><a href="#experience" class="button">Experience</a></li>
+					<li><a href="images\Design_Portfolio_Nameera.pdf" class="button">Design Portfolio</a></li>
+					<li><a href="#contact" class="button">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
 				<!-- Intro -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section id="home" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" style="padding-top: 80px;">
 						<div class="content">
 							<h1>Nameera Taher</h1>
-							<p class="major">Year 2, BSc Artificial Intelligence and Computer Science, 
+							<p class="major">Year 3, BSc Artificial Intelligence and Computer Science,
 								University of Birmingham Dubai
 							</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started!</a></li>
+								<li><a href="#projects" class="button big wide smooth-scroll-middle">Get Started!</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -40,7 +53,7 @@
 					</section>
 
 				<!-- Personal Projects -->
-				<section class="wrapper style1 align-center">
+				<section id="projects" class="wrapper style1 align-center">
 					<div class="inner">
 						<h2>Personal Projects</h2>
 						<p>Have a look at some of the notable projects I've worked on!</p>
@@ -53,8 +66,8 @@
 						<div class="content">
 							<h2>IoT OTP & RFID Authentication System</h2>
 							<p>This is an Arduino based project that utilizes an LCD screen, a keypad, and a buzzer
-								to verify user authentication. Using a similar principle, an extended part of the 
-								project also includes building an RFID-based door lock system using the ESP8266 and 
+								to verify user authentication. Using a similar principle, an extended part of the
+								project also includes building an RFID-based door lock system using the ESP8266 and
 								ESP32 microcontrollers.</p>
 							<ul class="actions stacked">
 								<li><a href="https://github.com/nameerataher/arduino-otp-authentication-system" class="button">GitHub</a></li>
@@ -69,9 +82,9 @@
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Student Database Management System</h2>
-							<p>A project developed using Python and SQL that enables the storage of important 
-								student credentials and data, which is sorted according to their final grades. 
-								This system provides a reliable and efficient way to manage student information, 
+							<p>A project developed using Python and SQL that enables the storage of important
+								student credentials and data, which is sorted according to their final grades.
+								This system provides a reliable and efficient way to manage student information,
 								making it easier for administrators to access and update data as needed.</p>
 						</div>
 						<div class="image">
@@ -79,8 +92,33 @@
 						</div>
 					</section>
 
+				<!-- Experience Section -->
+				<section id="experience" class="wrapper style1 align-center">
+					<div class="inner">
+						<h2>Experience</h2>
+						<p>Here's a brief overview of my academic and professional journey.</p>
+						<div class="items style1 medium onscroll-fade-in">
+							<section>
+								<span class="icon style2 major fa-graduation-cap"></span>
+								<h3>Education</h3>
+								<p>Currently pursuing BSc in Artificial Intelligence and Computer Science at University of Birmingham Dubai. Year 2 student with strong foundation in programming and AI concepts.</p>
+							</section>
+							<section>
+								<span class="icon style2 major fa-code"></span>
+								<h3>Technical Skills</h3>
+								<p>Proficient in Python, SQL, Arduino programming, and IoT development. Experience with database management systems and embedded systems programming.</p>
+							</section>
+							<section>
+								<span class="icon style2 major fa-lightbulb"></span>
+								<h3>Projects & Innovation</h3>
+								<p>Developed multiple IoT projects including authentication systems and database management solutions. Passionate about creating practical applications.</p>
+							</section>
+						</div>
+					</div>
+				</section>
+
 				<!-- Contact (dummy)-->
-					<section class="wrapper style1 align-center">
+					<section id="contact" class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch!</h2>
 							<form method="post" action="https://formspree.io/f/xrbboqeq">
@@ -102,7 +140,6 @@
 									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
 								</ul>
 							</form>
-
 						</div>
 					</section>
 
@@ -114,7 +151,7 @@
 								<li><a href="https://www.linkedin.com/in/nameerataher" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="mailto:nameerataher1212@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; 2024 Nameera Taher | v1.0.2 </p>
+							<p>&copy; 2026 Nameera Taher | v1.0.2 </p>
 						</div>
 					</footer>
 
